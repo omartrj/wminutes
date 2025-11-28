@@ -4,6 +4,7 @@ import DepartureBoard from './DepartureBoard';
 import { Station } from '@/types/Station';
 import { DepartureInfo } from '@/types/DepartureInfo';
 import { fetchStationData } from '@/services/WienerLinienService';
+import { REFRESH_INTERVAL_MS } from '@/constants/Api';
 
 const App: React.FC = () => {
   // Main States
@@ -40,8 +41,8 @@ const App: React.FC = () => {
     if (selectedStation) {
       loadData();
       
-      // Set automatic refresh interval every 60 seconds
-      const intervalId = setInterval(loadData, 60000);
+      // Set automatic refresh interval every REFRESH_INTERVAL_MS
+      const intervalId = setInterval(loadData, REFRESH_INTERVAL_MS);
       return () => clearInterval(intervalId);
     } else {
         setDepartures([]);
