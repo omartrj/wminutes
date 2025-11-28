@@ -14,7 +14,9 @@ export interface WLMonitor {
       municipalityId: number;
       type: string;
       coordName: string;
+      attributes?: Record<string, any>;
     };
   };
   lines: WLLine[];
+  attributes?: Record<string, any>;
 }

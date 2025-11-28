@@ -6,6 +6,8 @@ export interface WLMonitorResponse {
     monitors: WLMonitor[];
   };
   message?: {
-    value: string;
+    value?: string;
+    messageCode?: number;
+    serverTime?: string;
   };
 }
