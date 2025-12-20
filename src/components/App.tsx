@@ -94,9 +94,9 @@ const App: React.FC = () => {
 
       <footer className="mt-8 md:mt-12 text-center text-zinc-400 text-[10px] md:text-sm tracking-widest uppercase border-t border-zinc-900 pt-4 w-full max-w-3xl">
         <p className="mb-1">
-          WIENER MINUTES // <a href="https://digitales.wien.gv.at/open-data/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-200 underline decoration-zinc-700 underline-offset-4 transition-colors">WIENER LINIEN OPEN DATA</a>
+          WIENER MINUTES // SYSTEM VERSION 1.0.1
         </p>
-        <p className="text-zinc-500">SYSTEM VERSION 1.0.0 // NOT OFFICIALLY AFFILIATED</p>
+        <p className="text-zinc-500">MADE WITH <a href="https://digitales.wien.gv.at/open-data/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-200 underline decoration-zinc-700 underline-offset-4 transition-colors">WIENER LINIEN OPEN DATA</a></p>
         
         <div className="mt-4 flex justify-center">
             <a href="https://github.com/omartrj/wminutes" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-zinc-500 hover:text-zinc-300 transition-colors group">
