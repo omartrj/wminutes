@@ -7,14 +7,14 @@ import { DepartureInfo } from '@/types/DepartureInfo';
  */
 export const fetchStationData = async (divaId: number): Promise<DepartureInfo[]> => {
   // Construct query
-  const queryString = `diva=${divaId}&${API_PARAMS}`;
+  const queryString = `diva=${divaId}&${API_PARAMS}&_=${Date.now()}`;
   const targetUrl = `${API_BASE_URL}?${queryString}`;
   
   // Use proxy to avoid CORS
   const finalUrl = `${PROXY_URL}${encodeURIComponent(targetUrl)}`;
 
   try {
-    const response = await fetch(finalUrl);
+    const response = await fetch(finalUrl, { cache: 'no-store' });
     
     if (!response.ok) {
       throw new Error(`HTTP Error: ${response.status}`);
