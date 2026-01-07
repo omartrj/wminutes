@@ -26,8 +26,7 @@ Built with **React**, **TypeScript**, and **Vite**.
 
 ### API Integration
 
-The app talks directly to the [Wiener Linien Realtime API](https://digitales.wien.gv.at/open-data/). No backend, no databases, just fetching raw JSON.
-
+The app talks directly to the [Wiener Linien Realtime API](https://digitales.wien.gv.at/open-data/).
 It hits this endpoint:
 `https://www.wienerlinien.at/ogd_realtime/monitor`
 
