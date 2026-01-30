@@ -21,9 +21,6 @@
 ### Why?
 I built this because I wanted something faster and less bloated than the official app. I just needed to know when my tram was coming without navigating through menus. It’s built to look cool on mobile, load instantly, and give you that "station display" vibe.
 
-Built with **React**, **TypeScript**, and **Vite**.
-
-
 ### API Integration
 
 The app talks directly to the [Wiener Linien Realtime API](https://digitales.wien.gv.at/open-data/).
