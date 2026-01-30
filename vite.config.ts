@@ -8,8 +8,16 @@ export default defineConfig(() => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        proxy: {
+          '/api-wl': {
+            target: 'https://www.wienerlinien.at',
+            changeOrigin: true,
+            secure: false,
+            rewrite: (path) => path.replace(/^\/api-wl/, ''),
+          },
+        },
       },
-      base: './',
+      base: '/',
       plugins: [
         react(),
         tailwindcss()

@@ -1,4 +1,4 @@
-import { API_BASE_URL, API_PARAMS, PROXY_URL } from '@/constants/Api';
+import { API_BASE_URL, API_PARAMS } from '@/constants/Api';
 import { WLMonitorResponse } from '@/types/WLMonitorResponse';
 import { DepartureInfo } from '@/types/DepartureInfo';
 
@@ -8,10 +8,11 @@ import { DepartureInfo } from '@/types/DepartureInfo';
 export const fetchStationData = async (divaId: number): Promise<DepartureInfo[]> => {
   // Construct query
   const queryString = `diva=${divaId}&${API_PARAMS}&_=${Date.now()}`;
-  const targetUrl = `${API_BASE_URL}?${queryString}`;
+  //const targetUrl = `${API_BASE_URL}?${queryString}`;
+  const finalUrl = `${API_BASE_URL}?${queryString}`;
   
-  // Use proxy to avoid CORS
-  const finalUrl = `${PROXY_URL}${encodeURIComponent(targetUrl)}`;
+  // Use proxy to avoid CORS (No more used)
+  //const finalUrl = `${PROXY_URL}${encodeURIComponent(targetUrl)}`;
 
   try {
     const response = await fetch(finalUrl, { cache: 'no-store' });
