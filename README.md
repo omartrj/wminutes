@@ -31,9 +31,6 @@ The only parameter that matters is `diva` — that's the internal ID for each st
 
 More informations about the API can be found [here](https://www.data.gv.at/datasets/cfba4373-a654-3e0b-80f8-348738169f95?locale=de)
 
-**The CORS Workaround:**
-While the API supports HTTPS, it doesn't send the necessary CORS headers (`Access-Control-Allow-Origin`) for direct browser requests from other domains. To bypass this without setting up a server, I'm piping the traffic through `corsproxy.io`.
-
 ### Development
 
 To run this project locally:
