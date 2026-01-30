@@ -8,7 +8,7 @@
   </p>
 
   <p>
-    <a href="https://omartrj.github.io/wminutes/">🔴 <strong>Launch App</strong></a>
+    <a href="https://wminutes.netlify.app/">🔴 <strong>Launch App</strong></a>
   </p>
 
   <br />
